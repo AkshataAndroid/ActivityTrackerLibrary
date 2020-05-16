@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.activitytrackerlibrary">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AppNotificationActivity"/>
+        <activity android:name=".SecondActivity"/>
+        <service android:name=".ActivityBackgroundIntentService"
+            android:stopWithTask="false"/>
+        <service android:name=".BackgroundIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:stopWithTask="false">
+
+
+        </service>
+        <service android:name=".BackgroundJobService"
+            android:stopWithTask="false"/>
+        <service android:name=".NotificationIntentService"/>
+        <receiver android:name=".PushNotificationReceiver"/>
+        <service android:name=".SocketService"
+            android:stopWithTask="false"/>
+        <service android:name=".LocationService"/>
+        <meta-data
+            android:name="trackerService"
+            android:value="http://13.233.194.100:4000/" />
+    </application>
+
+</manifest>

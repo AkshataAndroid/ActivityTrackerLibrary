@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ActivityTrackerLibrary</string>
+    <string name="permission_rationale">rational</string>
+    <string name="settings">settings</string>
+    <string name="permission_denied_explanation">permisson denied</string>
+    <string name="msg_location_service_started">LocationStarted</string>
+    <string name="btn_label_refresh">Refresh</string>
+    <string name="no_google_playservice_available">No Play Service </string>
+
+</resources>

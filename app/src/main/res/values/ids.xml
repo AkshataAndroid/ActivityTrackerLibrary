@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="inapp_html_full_relative_layout" type="id" />
+    <item name="inapp_cover_frame_layout" type="id" />
+    <item name="cover_relative_layout" type="id" />
+    <item name="cover_linear_layout" type="id" />
+    <item name="cover_button1" type="id" />
+    <item name="cover_button2" type="id" />
+    <item name="backgroundImage" type="id" />
+    <item name="cover_title" type="id" />
+    <item name="cover_message" type="id" />
+</resources>
